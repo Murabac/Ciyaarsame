@@ -6,8 +6,12 @@ dynamic_tag = dynamic_tag.toString();
 if(dynamic_tag == "index")
 {
   document.title = "Ciyaarsame";
+  dynamic_tag = "Ciyaarsame";
 }else {
   document.title = dynamic_tag;
 }
+function var1() {
+document.getElementById("page_header").text = dynamic_tag;
+}
 
-document.getElementById("page_header").innerHTML = "=dsafasd";
+window.onload = var1;
