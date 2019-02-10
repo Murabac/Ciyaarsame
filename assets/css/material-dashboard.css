@@ -993,6 +993,8 @@ pre code {
   .container {
     max-width: 720px;
   }
+  .content-box {
+    padding: 1.5rem; }
 }
 
 @media (min-width: 992px) {
@@ -1005,6 +1007,20 @@ pre code {
   .container {
     max-width: 1140px;
   }
+  .content-box:after {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(4, 36, 113, 0.6);
+    content: "";
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
 }
 
 .container-fluid {
@@ -1576,6 +1592,8 @@ pre code {
     flex-grow: 1;
     max-width: 100%;
   }
+  .content-box {
+    padding: 1.5rem; }
   .col-lg-auto {
     flex: 0 0 auto;
     width: auto;
@@ -1718,6 +1736,8 @@ pre code {
     flex-grow: 1;
     max-width: 100%;
   }
+  .content-box {
+    padding: 2rem; }
   .col-xl-auto {
     flex: 0 0 auto;
     width: auto;
@@ -18819,4 +18839,16 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-/*# sourceMappingURL=dashboard-free.css.map */
+.content-i {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  display: block;
+}
+.content-box {
+  vertical-align: top;
+  padding: 2rem 3rem;
+  display: table-cell;
+  display: block;
+
+ }
